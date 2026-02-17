@@ -62,5 +62,5 @@ Detta projekt har utvecklats för att demonstrera hög standard inom mjukvaruute
    ```
    Applikationen finns på `http://localhost:5173`.
 
-Denna applikation använder för närvarande ett lokalt filsystem för lagring i demosyfte. På molnbaserade plattformar med "ephemeral hosting" (som **Render** eller **Vercel**) återställs uppladdade filer vid omstart av servern.
+Denna applikation använder för närvarande ett lokalt filsystem för lagring i demosyfte. På Vercel återställs uppladdade filer vid omstart av servern.
 
