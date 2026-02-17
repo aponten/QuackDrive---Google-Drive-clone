@@ -1,6 +1,7 @@
 ﻿# QuackDrive - Google Drive klon
 
 QuackDrive är en fullstack-applikation och en förenklad klon av Google Drive. Projektet visar upp ett rent användargränssnitt för effektiv filhantering, stöttat av en Node.js-server.
+[Demo-länk](https://quackdrive.onrender.com/)
 
 ## 🚀 Översikt
 Detta projekt har utvecklats för att demonstrera kunskap inom mjukvaruutveckling med fokus på:
