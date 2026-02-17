@@ -1,0 +1,21 @@
+﻿{
+  "name": "quackdrive",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "QuackDrive - Google Drive Clone",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "install-all": "npm install && cd server && npm install",
+    "start": "node server/server.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "express": "^4.22.1"
+  },
+  "devDependencies": {
+    "vite": "^4.4.0"
+  }
+}

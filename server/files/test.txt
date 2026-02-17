@@ -1,0 +1,42 @@
+Begränsningar
+Ingen .innerHTML eller document.createElement, allt ska skapas via ramverket!
+
+Extern kod får nu läggas till via NPM. Kom dock ihåg att varje paket ökar arbetet kring versionsuppgraderingar och hanteringen av säkerhetsvarningar på grund av NPMs dumheter, så ledningen (Oscar) är väldigt försiktig där och blir inte glad om onödigt många externa paket används för något ni kunde löst på en halvtimme på egen hand, så se till att kunna motivera valet!
+
+
+Godkänt
+För att få G räcker det med att skapa själva webbsidan utan en bakomliggande server. Det går alltså att hålla alla filer i minnet i webbsidans Javascript och direkt glömma dessa så fort sidan laddas om. Annars kan de såklart sparas i localstorage för att efterlikna serverfunktionalitet.
+
+Målet med den här versionen är att uppfylla följande:
+En sidebar komponent för det vänstra fältet
+En knapp-komponent som används för "Startsida", "Min enhet" osv. Knappen ska ta emot den text som ska visas, och bör (men behöver inte) ta emot en ikon
+En filvy-komponent som innehåller sökfältet och filerna
+En sökfältskomponent (räcker med att den bara är visuell utan att fungera)
+Raderna med filer kan tryckas in rakt av eller göras via en "filrads-komponent" som visar filnamn, ikon, kanske en datumstämpel osv beroende på vilken data ni vill inkludera
+Med komponent menas ramverkets version av det:
+React components
+Angular components
+Vue component basics
+Svelte introduction / Your first component
+
+Väl godkänt
+För VG krävs allt under G, plus följande:
+Grundläggande styling med
+Layoutanpassning för mobil
+Ljust / mörkt tema beroende på webbläsarens inställningar
+
+En enkel server som tillhandahåller:
+All HTML, CSS och Javascript. De kan hanteras separat av ramverket under utveckling beroende på hur de och deras hot-reload system fungerar, men körs npm run build så ska färdiga filer byggas så att det går att leverera dem via Node om npm run start körs!
+
+REST-APIet ska användas för att hantera filerna. Filerna ska sparas av servern som vanliga filer på disk i valfri mapp servern kommer åt. Följande endpoints ska finnas (där * är filens sökväg, finns inga mappar är det bara filens namn, lägger ni till stöd för mappar så hade mappen "test" med filen "hej.txt" anropats som "api/files/test/hej.txt" osv):
+PUT api/files/*
+Skapa eller ersätt den angivna filen, där filens bytes skickas med bodyn
+
+GET api/files
+Returnera en lista av alla filer, och eventuell tillhörande data ni vill presentera som exempelvis datum
+
+GET api/files/*
+Hämtar den faktiskta filen i bytes
+
+DELETE api/files/*
+Tar bort den angivna filen

@@ -1,0 +1,18 @@
+:root[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e8eaed;     
+  --sidebar-bg: #121212;
+  --border-color: #3c4043;
+  --hover-bg: #2d2e30;
+  --Header-color: #121212;
+  
+  /* Buttons */
+  --btn-bg: #8ab4f8;      
+  --btn-hover: #93bbf9;    
+  --btn-text: #202124; 
+
+  /* Search bar */
+  --search-bg: #3c4043;       
+  --search-text: #e8eaed;     
+  --search-focus-bg: #474b4e;
+}

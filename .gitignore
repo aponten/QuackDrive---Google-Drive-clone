@@ -1,0 +1,5 @@
+# Ignorera node_modules
+node_modules/
+
+# Ignorera Vite-cachefiler
+node_modules/.vite/

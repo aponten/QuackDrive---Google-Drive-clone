@@ -1,0 +1,12 @@
+{
+  "name": "duckdrive-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1"
+  }
+}
