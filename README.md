@@ -62,10 +62,5 @@ Detta projekt har utvecklats för att demonstrera hög standard inom mjukvaruute
    ```
    Applikationen finns på `http://localhost:5173`.
 
-## ☁️ Notering om distribution (Deployment)
 Denna applikation använder för närvarande ett lokalt filsystem för lagring i demosyfte. På molnbaserade plattformar med "ephemeral hosting" (som **Render** eller **Vercel**) återställs uppladdade filer vid omstart av servern.
 
-**Rekommendation för produktion:** För permanent lagring bör backend integreras med molnlösningar som **AWS S3**, **Google Cloud Storage** eller **Vercel Blob**.
-
-## 📄 Licens
-Detta projekt är licensierat under MIT-licensen.
