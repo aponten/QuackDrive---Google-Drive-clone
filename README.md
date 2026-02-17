@@ -1,9 +1,9 @@
-﻿# QuackDrive - Ett modernt molnlagringskoncept
+﻿# QuackDrive - Google Drive klon
 
-QuackDrive är en professionell fullstack-applikation och en förenklad klon av Google Drive. Projektet visar upp ett rent och intuitivt användargränssnitt för effektiv filhantering, stöttat av en robust Node.js-server.
+QuackDrive är en fullstack-applikation och en förenklad klon av Google Drive. Projektet visar upp ett rent användargränssnitt för effektiv filhantering, stöttat av en Node.js-server.
 
 ## 🚀 Översikt
-Detta projekt har utvecklats för att demonstrera hög standard inom mjukvaruuteckning med fokus på:
+Detta projekt har utvecklats för att demonstrera kunskap inom mjukvaruutveckling med fokus på:
 - **Frontend-logik:** Komplex tillståndshantering med React hooks, flervalsfunktionalitet och "debounced" sökning.
 - **Backend-integritet:** Asynkron filhantering med Express och säker lagringshantering.
 - **Säkerhet:** Implementering av "filename sanitization" för att förhindra Path Traversal-sårbarheter.
